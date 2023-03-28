@@ -1,18 +1,19 @@
 import React from 'react';
-import logo from './icons/logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Training to become something great.
-        </p>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <MainLayout>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                {/*<Route path="/about" element={<AboutContent />} />*/}
+                {/*<Route path="/services" element={<ServicesContent />} />*/}
+                {/*<Route path="/contact" element={<ContactContent />} />*/}
+            </Routes>
+        </MainLayout>
+    );
+};
 
 export default App;
