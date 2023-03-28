@@ -1,7 +1,7 @@
 import {Layout} from 'antd';
 import Menu from "./Menu";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 const MainLayout = ({ children }: any) => {
 
@@ -14,7 +14,6 @@ const MainLayout = ({ children }: any) => {
             <Content style={{ marginTop: 64 }}>
                 {children}
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
         </Layout>
     );
 }
