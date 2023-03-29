@@ -12,7 +12,12 @@ const Home = () => {
                     backgroundImage: `url(${process.env.PUBLIC_URL}/resources/images/weights.jpg)`
                 }}
             >
-                <Title style={{ color: 'white', textAlign: 'center' }}>Inspiring text here</Title>
+                <Title
+                    className={'flex justify-center items-center h-full'}
+                    style={{color: 'white'}}
+                >
+                    Inspiring text here
+                </Title>
             </Card>
             <Card>
                 <Title>Home</Title>
