@@ -1,8 +1,6 @@
 import React from 'react';
-import {Menu as MenuAnt, MenuProps, Switch} from 'antd';
+import {Menu as MenuAnt, MenuProps} from 'antd';
 import Logo from "../components/Logo";
-import {SettingOutlined} from '@ant-design/icons';
-import {DarkIcon, LightIcon} from "../config/icons";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -22,31 +20,18 @@ function getItem(
     } as MenuItem;
 }
 
-const Menu = ({toggleTheme}: {toggleTheme: () => void }) => {
+const Menu = () => {
     const items: MenuProps['items'] = [
         getItem('Inicio', 'home'),
         getItem('Servicios', 'serv'),
         getItem('Contacto', 'cont'),
-        getItem('Quienes somos', 'about'),
-        getItem(<SettingOutlined/>,
-            'sett',
-            null,
-            [
-                getItem(
-                    <Switch
-                        checkedChildren={<LightIcon style={{fontSize: 14}} />}
-                        unCheckedChildren={<DarkIcon style={{fontSize: 14}} />}
-                        defaultChecked
-                    />,
-                    'theme',
-                    <span className={'mr-4'}>Tema</span>
-                )]),
+        getItem('Quienes somos', 'about')
     ];
 
     const onClick: MenuProps['onClick'] = (e) => {
         switch (e.key) {
-            case 'theme':
-                toggleTheme();
+            case 'home':
+                console.log('home');
                 break;
         }
     };

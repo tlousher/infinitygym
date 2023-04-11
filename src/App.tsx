@@ -5,27 +5,24 @@ import Home from "./pages/Home";
 import {ConfigProvider, theme} from "antd";
 
 const App = () => {
-    const [currentTheme, setCurrentTheme] = React.useState('light');
-    const toggleTheme = () => {
-        setCurrentTheme(currentTheme === 'light' ? 'dark' : 'light');
-    }
+    const [currentTheme] = React.useState('dark');
     const darkTheme = {
         token: {
             algorithm: theme.darkAlgorithm,
-            colorPrimary: '#231f20',
+            colorPrimary: '#ffdd00',
         }
     }
     const lightTheme = {
         token: {
             algorithm: theme.defaultAlgorithm,
-            colorPrimary: '#ffdd00',
+            colorPrimary: '#231f20',
         }
     }
     return (
         <ConfigProvider
             theme={currentTheme === 'light' ? lightTheme : darkTheme}
         >
-            <MainLayout toggleTheme={toggleTheme}>
+            <MainLayout>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     {/*<Route path="/about" element={<AboutContent />} />*/}

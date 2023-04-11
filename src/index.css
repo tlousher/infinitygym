@@ -1,3 +1,14 @@
+:root{
+  --primary-color: #ffdd00;
+  --primary-background: #231f20;
+  --primary-hover-color: #b39b00;
+  --success-color: #80ad5a;
+  --border-color: #CCCCCC;
+  --primary-danger: #cc1f00;
+  --gray-color: #757575;
+  --darkgray-color: rgba(0, 0, 0, 0.11);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +23,28 @@ code {
     monospace;
 }
 
+/*<editor-fold desc="ANT Design">*/
 .ant-card .ant-card-body {
   height: 100%;
 }
+
+/*<editor-fold desc="Header">*/
+.ant-layout-header {
+  padding: 0 16px;
+}
+.ant-layout-header {
+  background: var(--primary-background);
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Menu">*/
+.ant-menu-light {
+    background: var(--primary-background);
+    color: var(--primary-color);
+}
+.ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+  color: var(--primary-hover-color);
+  font-weight: bold;
+}
+/*</editor-fold>*/
+/*</editor-fold>*/

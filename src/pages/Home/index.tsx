@@ -9,7 +9,7 @@ const Home = () => {
             <Card
                 className={'h-screen bg-cover bg-center'}
                 style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL}/resources/images/weights.jpg)`
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/resources/images/jujitsu_5.jpg)`
                 }}
             >
                 <Title
