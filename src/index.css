@@ -1,9 +1,24 @@
+/*:root{*/
+/*  --primary-color: #ffdd00;*/
+/*  --primary-background: #231f20;*/
+/*  --secondary-background: #231f20;*/
+/*  --primary-hover-color: #b39b00;*/
+/*  --success-color: #80ad5a;*/
+/*  --border-color: #CCCCCC;*/
+/*  --text-color: #d9d6c6;*/
+/*  --primary-danger: #cc1f00;*/
+/*  --gray-color: #757575;*/
+/*  --darkgray-color: rgba(0, 0, 0, 0.11);*/
+/*}*/
+
 :root{
   --primary-color: #ffdd00;
-  --primary-background: #231f20;
+  --primary-background: #fff9de;
+  --secondary-background: #231f20;
   --primary-hover-color: #b39b00;
   --success-color: #80ad5a;
   --border-color: #CCCCCC;
+  --text-color: #231f20;
   --primary-danger: #cc1f00;
   --gray-color: #757575;
   --darkgray-color: rgba(0, 0, 0, 0.11);
@@ -28,18 +43,23 @@ code {
   height: 100%;
 }
 
+.ant-layout-content {
+  background: var(--primary-background);
+  color: var(--text-color);
+}
+
 /*<editor-fold desc="Header">*/
 .ant-layout-header {
   padding: 0 16px;
 }
 .ant-layout-header {
-  background: var(--primary-background);
+  background: var(--secondary-background);
 }
 /*</editor-fold>*/
 
 /*<editor-fold desc="Menu">*/
 .ant-menu-light {
-    background: var(--primary-background);
+    background: var(--secondary-background);
     color: var(--primary-color);
 }
 .ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
