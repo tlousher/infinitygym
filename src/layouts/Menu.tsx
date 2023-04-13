@@ -1,5 +1,5 @@
 import React from 'react';
-import {Menu as MenuAnt, MenuProps} from 'antd';
+import {Menu as MenuAnt, MenuProps, Tooltip} from 'antd';
 import Logo from "../components/Logo";
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -25,9 +25,9 @@ function getItem(
 const Menu = () => {
     const items: MenuProps['items'] = [
         getItem('Inicio', 'home'),
-        getItem('Servicios', 'serv', null, undefined, undefined, true),
-        getItem('Contacto', 'cont', null, undefined, undefined, true),
-        getItem('Quienes somos', 'about', null, undefined, undefined, true)
+        getItem(<Tooltip title={'Proximamente'}>Servicios</Tooltip>, 'serv', null, undefined, undefined, true),
+        getItem(<Tooltip title={'Proximamente'}>Contacto</Tooltip>, 'cont', null, undefined, undefined, true),
+        getItem(<Tooltip title={'Proximamente'}>Quienes somos</Tooltip>, 'about', null, undefined, undefined, true)
     ];
 
     const onClick: MenuProps['onClick'] = (e) => {
