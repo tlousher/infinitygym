@@ -33,6 +33,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: var(--primary-color);
+
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
