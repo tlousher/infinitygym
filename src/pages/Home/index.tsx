@@ -5,30 +5,18 @@ import {BoxingGlovesIcon, GymAppleLightIcon, GymDumbbellLightIcon, GymGlovesLigh
 import Image from "../../components/Image";
 import styles from "./styles.module.scss";
 
-const Line = ({left=false}) => {
-    return (
-        <span
-            style={{
-                display: 'inline-block',
-                width: '5%',
-                marginRight: !left ? 10 : 0,
-                marginLeft: left ? 10 : 0,
-                borderBottom: '1px solid var(--text-color)'
-            }}
-        />
-    );
-}
-
 const ZoneTitle = ({lineup, title, description}: {lineup: React.ReactNode, title: React.ReactNode, description: React.ReactNode}) => {
     return (
         <Col span={24} className={'my-6'}>
             <Row>
                 <Col span={24} className={'flex justify-center items-center mb-2'}>
-                    <Line /><span className={'text-xs'}>{lineup}</span><Line left={true} />
+                    <span className={'text-2xl font-bold text-primary rounded bg-secondary-background text-center px-6 py-2 mb-2'}>
+                        {lineup}
+                    </span>
                 </Col>
                 <Col span={24}>
                     <div className={'flex justify-center items-center'}>
-                        <span className={'text-xl font-bold'}>{title}</span>
+                        <span className={'text-base'}>{title}</span>
                     </div>
                 </Col>
                 <Col span={24}>
@@ -121,19 +109,20 @@ const Home = () => {
                             title={'Busca tu camino'}
                             description={'Tenemos varios estilos de entrenamiento para que encuentres el que más se adapte a ti'}
                         />
-                        <HoveringImage description={'Arte marcial de defensa personal y sumisión.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'jujitsu_ai'} title={'Jujitsu'} />
-                        <HoveringImage description={'Deporte de combate con golpes y patadas.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'kickboxing_ai'} title={'Kickboxing'} />
-                        <HoveringImage description={'Arte marcial tailandés de ocho extremidades.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'muaythai_ai'} title={'Muay Thai'} />
+                        <HoveringImage description={'Arte marcial de defensa personal y sumisión.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'jujitsu_banner'} title={'Jujitsu'} />
+                        <HoveringImage description={'Deporte de defensa personal de contacto con golpes y patadas.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'kickboxing_banner'} title={'Kickboxing'} />
+                        <HoveringImage description={'Deporte de combate de contacto con golpes de puño.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'boxing_banner'} title={'Boxing'} />
+                        <HoveringImage description={'Arte marcial tailandés de ocho extremidades.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'muaythai_banner'} title={'Muay Thai'} />
                         <HoveringImage description={'Lucha cuerpo a cuerpo en busca de dominación.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'olimpic_ai'} title={'Lucha olímpica'} />
-                        <HoveringImage description={'Deporte de combate mixto con múltiples disciplinas.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'mma_ai'} title={'MMA'} />
+                        <HoveringImage description={'Deporte de combate mixto con múltiples disciplinas.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'mma_banner'} title={'MMA'} />
                         <ZoneTitle
-                            lineup={'Infinite Kids'}
-                            title={'Crecimiento y diversión'}
-                            description={'Para los mas pequeños de la casa, tenemos un programa de entrenamiento diseñado para que se diviertan y desarrollen habilidades físicas y mentales.'}
+                            lineup={'Infinite Niños & Jovenes'}
+                            title={'Confianza y respeto'}
+                            description={'Para los mas pequeños de la casa, tenemos un divertido programa de entrenamiento diseñado para fomentar confianza y respeto mientras desarrollan habilidades de salud físicas y mentales.'}
                         />
-                        <HoveringImage description={'Arte marcial de defensa personal.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'kids1'} title={'Jujitsu Kids'} />
-                        <HoveringImage description={'Deporte de combate con golpes y patadas.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'kids2'} title={'Kickboxing Kids'} />
-                        <HoveringImage description={'Campamento de verano de artes marciales.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'kids3'} title={'Campamento Vacacional'} />
+                        <HoveringImage description={'Arte marcial de defensa personal.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'jujitsu_kids_banner'} title={'Jujitsu Niños'} />
+                        <HoveringImage description={'Arte marcial de defensa personal.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'jujitsu_young_banner'} title={'Jujitsu Jovenes'} />
+                        <HoveringImage description={'Campamento de verano de artes marciales.'} icon={<BoxingGlovesIcon style={{fontSize: 30}} />} image={'vacational_kids'} title={'Campamento Vacacional'} />
                     </Row>
                 </div>
             </div>

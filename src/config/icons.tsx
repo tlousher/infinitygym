@@ -17,6 +17,7 @@ import { ReactComponent as Facebook } from '../assets/icons/facebook.svg'
 import { ReactComponent as Instagram } from '../assets/icons/instagram.svg'
 import { ReactComponent as Whatsapp } from '../assets/icons/whatsapp.svg'
 import { ReactComponent as Youtube } from '../assets/icons/youtube.svg'
+import { ReactComponent as TikTok } from '../assets/icons/tiktok.svg'
 
 export const LightIcon = (props: any) => <Icon component={Light} {...props} />
 export const DarkIcon = (props: any) => <Icon component={Dark} {...props} />
@@ -35,3 +36,4 @@ export const FacebookIcon = (props: any) => <Icon component={Facebook} {...props
 export const InstagramIcon = (props: any) => <Icon component={Instagram} {...props} />
 export const WhatsappIcon = (props: any) => <Icon component={Whatsapp} {...props} />
 export const YoutubeIcon = (props: any) => <Icon component={Youtube} {...props} />
+export const TikTokIcon = (props: any) => <Icon component={TikTok} {...props} />

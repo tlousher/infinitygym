@@ -14,11 +14,11 @@
 :root{
   --primary-color: #ffdd00;
   --primary-background: #fff9de;
-  --secondary-background: #231f20;
+  --secondary-background: #111111FF;
   --primary-hover-color: #b39b00;
   --success-color: #80ad5a;
   --border-color: #CCCCCC;
-  --text-color: #231f20;
+  --text-color: #111111FF;
   --primary-danger: #cc1f00;
   --gray-color: #757575;
   --darkgray-color: rgba(0, 0, 0, 0.11);
@@ -75,6 +75,12 @@ code {
 .ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
   color: var(--primary-hover-color);
   font-weight: bold;
+}
+.ant-menu-light .ant-menu-item-disabled {
+  color: var(--gray-color) !important;
+}
+.ant-menu-light .ant-menu-item-disabled:hover {
+  text-decoration: line-through;
 }
 /*</editor-fold>*/
 /*</editor-fold>*/

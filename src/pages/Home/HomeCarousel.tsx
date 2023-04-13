@@ -17,19 +17,43 @@ const HomeCarousel = () => {
             </div>
             <div className={styles.carrouselPicture}>
                 <Image
-                    src={`${process.env.PUBLIC_URL}/resources/images/jujitsu_2.jpg`}
+                    src={`${process.env.PUBLIC_URL}/resources/images/kids1.jpg`}
                     style={{maxHeight: 550}}
                 />
             </div>
             <div className={styles.carrouselPicture}>
                 <Image
-                    src={`${process.env.PUBLIC_URL}/resources/images/jujitsu_4.jpg`}
+                    src={`${process.env.PUBLIC_URL}/resources/images/funcional_wide.jpg`}
+                    style={{maxHeight: 550}}
+                />
+            </div>
+            <div className={styles.carrouselPicture}>
+                <Image
+                    src={`${process.env.PUBLIC_URL}/resources/images/boxing_wide.jpg`}
+                    style={{maxHeight: 550}}
+                />
+            </div>
+            <div className={styles.carrouselPicture}>
+                <Image
+                    src={`${process.env.PUBLIC_URL}/resources/images/kids_wide.jpg`}
                     style={{maxHeight: 550}}
                 />
             </div>
             <div className={styles.carrouselPicture}>
                 <Image
                     src={`${process.env.PUBLIC_URL}/resources/images/jujitsu_6.jpg`}
+                    style={{maxHeight: 550}}
+                />
+            </div>
+            <div className={styles.carrouselPicture}>
+                <Image
+                    src={`${process.env.PUBLIC_URL}/resources/images/kickboxing_wide.jpg`}
+                    style={{maxHeight: 550}}
+                />
+            </div>
+            <div className={styles.carrouselPicture}>
+                <Image
+                    src={`${process.env.PUBLIC_URL}/resources/images/muaythai_wide.jpg`}
                     style={{maxHeight: 550}}
                 />
             </div>
