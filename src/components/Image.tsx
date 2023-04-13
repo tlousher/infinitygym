@@ -13,15 +13,17 @@ interface IImageProps {
     src: string;
     style?: React.CSSProperties;
     preview?: boolean;
+    footer?: React.ReactNode;
 }
 
-const Image = ({src, style, preview=false}: IImageProps) => {
+const Image = ({src, style, preview=false, footer=null}: IImageProps) => {
     return (
         <div className={styles.imageBasic} style={style}>
             <AntImage
                 src={src}
                 preview={preview}
             />
+            {footer}
         </div>
     );
 };

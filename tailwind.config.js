@@ -9,7 +9,7 @@ module.exports = {
             'primary': 'var(--primary-color)',
             'background': 'var(--primary-background)',
             'secondary-background': 'var(--secondary-background)',
-            'yellow-gray': 'var(--text-color)',
+            'text': 'var(--text-color)',
         }
     },
   },
