@@ -10,6 +10,7 @@ function getItem(
     icon?: React.ReactNode,
     children?: MenuItem[],
     type?: 'group',
+    disabled?: boolean,
 ): MenuItem {
     return {
         key,
@@ -17,15 +18,16 @@ function getItem(
         children,
         label,
         type,
+        disabled,
     } as MenuItem;
 }
 
 const Menu = () => {
     const items: MenuProps['items'] = [
         getItem('Inicio', 'home'),
-        getItem('Servicios', 'serv'),
-        getItem('Contacto', 'cont'),
-        getItem('Quienes somos', 'about')
+        getItem('Servicios', 'serv', null, undefined, undefined, true),
+        getItem('Contacto', 'cont', null, undefined, undefined, true),
+        getItem('Quienes somos', 'about', null, undefined, undefined, true)
     ];
 
     const onClick: MenuProps['onClick'] = (e) => {
@@ -41,7 +43,7 @@ const Menu = () => {
             <Logo />
             <MenuAnt
                 mode="horizontal"
-                defaultSelectedKeys={['1']}
+                defaultSelectedKeys={['home']}
                 className={'justify-center flex-1 mr-28'}
                 onClick={onClick}
                 items={items}
